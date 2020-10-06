@@ -92,7 +92,7 @@ $app->get('create_tables', function () use ($app) {
         . 'lastName VARCHAR(100) NOT NULL, '
         . 'password VARCHAR(100) NOT NULL, '
         . 'user_id INT NOT NULL AUTO_INCREMENT, '
-        . 'PRIMARY KEY ( user_id ));
+        . 'PRIMARY KEY ( user_id ))');
     $result = $stmt->execute();
 
     if (false === $result) {
