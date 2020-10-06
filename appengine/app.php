@@ -83,7 +83,7 @@ $app['database'] = function () use ($app) {
 
 $app->get('create_tables', function () use ($app) {
     /** @var PDO $db */
-    $db = $app['database'];
+    $db = $app['carsharedb'];
     // create the tables
     $stmt = $db->prepare('CREATE TABLE IF NOT EXISTS users ('
         . 'email VARCHAR(100) NOT NULL, '
